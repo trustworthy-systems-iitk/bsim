@@ -1,0 +1,84 @@
+<BSIMConfig>
+  <wordTrace>false</wordTrace>
+  <analyzeFrameBuffer>true</analyzeFrameBuffer>
+  <eliminateOverlaps>true</eliminateOverlaps>
+  <coverageTarget>0</coverageTarget>
+  <createClkModule>false</createClkModule>
+  <dumpGateComments>false</dumpGateComments>
+  <a2dffInfo />
+  <rewriteLog />
+  <removeDeadNodes>true</removeDeadNodes>
+  <ignorePins />
+  <computeDistances>false</computeDistances>
+  <analyzeCommonInputs>true</analyzeCommonInputs>
+  <instanceDump />
+  <interactivePropagator>false</interactivePropagator>
+  <dumpWords>$name.json</dumpWords>
+  <bigModules>false</bigModules>
+  <removeNOR2XB />
+  <createUnknownInputs>false</createUnknownInputs>
+  <simpleWordAnalysis>false</simpleWordAnalysis>
+  <ignoreScanInputs>false</ignoreScanInputs>
+  <renameWiresInModule>true</renameWiresInModule>
+  <computeRepresentativeModules>
+  false</computeRepresentativeModules>
+  <wordTrace>false</wordTrace>
+  <NCextract>false</NCextract>
+  <mergeModules>true</mergeModules>
+  <kcoverSize>6</kcoverSize>
+  <kcoverTh>6</kcoverTh>
+  <aggregation>true</aggregation>
+  <simpleFIFOAnalysis>false</simpleFIFOAnalysis>
+  <simpleFIFOAnalysisOut />
+  <treeSummaryOut />
+  <fullFunctionScript />
+  <candidateModulesBound>false</candidateModulesBound>
+  <latchAnalysis>false</latchAnalysis>
+  <candidateWordToModule>false</candidateWordToModule>
+  <candidateLibMatch>false</candidateLibMatch>
+  <coloringWithDepth>false</coloringWithDepth>
+  <circuitGraphOut>ckt</circuitGraphOut>
+  <verilogOutFile>results/verilog/$name</verilogOutFile>
+  <summaryOutFile>results/$name.summary</summaryOutFile>
+  <candidateOutFile />
+  <partialFunctionOutFile />
+  <counterAnalysis>true</counterAnalysis>
+  <counterAnalysisMaxCounterSize>8</counterAnalysisMaxCounterSize>
+  <counterAnalysisLatchesToIgnore />
+  <shiftregAnalysis>true</shiftregAnalysis>
+  <enablePropagation>false</enablePropagation>
+  <partialFunctionAnalysis>false</partialFunctionAnalysis>
+  <signalFlowAnalysis>false</signalFlowAnalysis>
+  <conflictAnalysis>false</conflictAnalysis>
+  <rewriteBuffers>true</rewriteBuffers>
+  <ramAnalysis>true</ramAnalysis>
+  <resetSignal>rst</resetSignal>
+  <resetPolarity>0</resetPolarity>
+  <vcdFileName />
+  <undrivenSignals />
+  <clockTreeRoots />
+  <resetTreeRoots />
+  <resetTreeModules />
+  <pinGroups />
+  <backPropagationLevels>10</backPropagationLevels>
+  <backPropagation />
+  <userDefinedModules />
+  <testCktTechLib>12soi</testCktTechLib>
+  <libCktsTechLib>12soi</libCktsTechLib>
+  <bitsliceMatchFile />
+  <libraryElements />
+  <bitslices />
+  <partialFuncModules />
+  <freqBasedNC>false</freqBasedNC>
+  <freqWordDetect>false</freqWordDetect>
+  <refFileName />
+  <sliceableILP>true</sliceableILP>
+  <dumpOnlyAdderWords>false</dumpOnlyAdderWords>
+  <minimizeModuleCount>true</minimizeModuleCount>
+  <knownMergesOnly>true</knownMergesOnly>
+  <externalModuleFile />
+  <mergeModules2>false</mergeModules2>
+  <refFileName />
+  <maxTopoSortIterations>200</maxTopoSortIterations>
+  <disableCgenTreeAggregation>false</disableCgenTreeAggregation>
+<addFakeConnections>false</addFakeConnections><minMultibitElementSize>2</minMultibitElementSize></BSIMConfig>

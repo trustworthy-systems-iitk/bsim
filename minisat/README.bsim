@@ -1,0 +1,12 @@
+Using MiniSat in BSIM:
+
+1. First setup the environment for building minisat.
+    $ cd minisat
+    $ export MROOT=`pwd`      # replace with setenv on csh
+
+2. Build the MiniSat library.
+
+    $ cd core
+    $ make libr
+
+You are now ready to use minisat within BSIM.
