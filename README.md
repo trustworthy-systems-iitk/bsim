@@ -7,6 +7,12 @@ inferred high-level components such adders, subtractors, register files etc.
 
 ##Compiling and Running bsim
 
+###Step 0: Requirements.
+
+bsim was developed on Linux. Some people have had success installing and running
+it on Macs, but this requires hacking the makefile. These instructions assume
+you are running a relatively recent version of Linux.
+
 Make sure your system has the necessary libraries installed. These are:
 
 * IBM CPLEX Solver
@@ -19,11 +25,11 @@ than CPLEX. Also note the quality of results will be a little worse because the
 GPLEX formulation does not implemente what the journal paper calls the
 "sliceable" formulation (section IVB).
    
-Step 1: Clone the bsim repository.
+###Step 1: Clone the bsim repository.
 
     $ hg clone https://spramod@bitbucket.org/spramod/bsim-tetc14
 
-Step 2: Build CUDD
+###Step 2: Build CUDD
      
     $  cd bsim/cudd-2.4.2/
     $  make
@@ -31,14 +37,14 @@ Step 2: Build CUDD
     $  make
     $  cd ../..
      
-Step 3: Build MiniSAT
+###Step 3: Build MiniSAT
 
     $  cd minisat/
     $  export MROOT=`pwd`
     $  cd core/
     $  make libr
 
-Step 4: Build bsim
+###Step 4: Build bsim
 
     $ cd verilog/
     $ make
@@ -59,6 +65,11 @@ output files produced by BSIM using this command are:
 * results/verilog/router_flat.v and results/verilog/router_flat.library.v: 
   these two files contain an "abstracted" version of the router design.
 
+bsim has a lot of options, all of which are specified using the config XML file
+that controls its operation. You may want to look through the bsim_options_t
+structure in main.h to see what the options.  One example is the "dumpWords"
+option which can be used to dump aggregated words (groups of bits are operated
+open together) that were discovered by bsim.
 
 #References
 
