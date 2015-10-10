@@ -58,7 +58,7 @@ One example run is as follows:
     $ ./bsim -o configs/default.xml tests/router_flat.v
 
 This command asks bsim to analyze the design in tests/router_flat.v. The 
-output files produced by BSIM using this command are:
+output files produced by bsim using this command are:
 
 * results/router_flat.summary : this contains a summary of the inferred
   components found by bsim.  
