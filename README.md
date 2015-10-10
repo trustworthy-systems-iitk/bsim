@@ -5,7 +5,7 @@ input to the tool is a flat verilog netlist consisting of gates and latches.
 The output of the tool is an _abstracted_ verilog netlist that contains 
 inferred high-level components such adders, subtracters, register files etc.
 
-##Compiling and Running bsim
+##Compiling bsim
 
 ###Step 0: Requirements.
 
