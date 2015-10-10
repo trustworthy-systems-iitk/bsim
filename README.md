@@ -1,11 +1,11 @@
 #Introduction
 
-<tt>bsim</tt> is an algorithmic inference tool that processes gate-level netlists. The
+bsim is an algorithmic inference tool that processes gate-level netlists. The
 input to the tool is a flat verilog netlist consisting of gates and latches.
 The output of the tool is an _abstracted_ verilog netlist that contains 
 inferred high-level components such adders, subtractors, register files etc.
 
-##Compiling and Running <tt>bsim</tt>
+##Compiling and Running bsim
 
 Make sure your system has the necessary libraries installed. These are:
 
@@ -19,7 +19,7 @@ than CPLEX. Also note the quality of results will be a little worse because the
 GPLEX formulation does not implemente what the journal paper calls the
 "sliceable" formulation (section IVB).
    
-Step 1: Clone the <tt>bsim repository.</tt>
+Step 1: Clone the bsim repository.
 
     $ hg clone https://spramod@bitbucket.org/spramod/bsim-tetc14
 
@@ -38,24 +38,24 @@ Step 3: Build MiniSAT
     $  cd core/
     $  make libr
 
-Step 4: Build <tt>bsim</tt>
+Step 4: Build bsim
 
     $ cd verilog/
     $ make
 
-If all this succeeds, you have successfully built <tt>bsim.</tt>
+If all this succeeds, you have successfully built bsim.
 
-##Running <tt>bsim</tt>
+##Running bsim
 
 One example run is as follows:
 
     $ ./bsim -o configs/default.xml tests/router_flat.v
 
-This command asks <tt>bsim to analyze the design in tests/router_flat.v. The </tt>
+This command asks bsim to analyze the design in tests/router_flat.v. The 
 output files produced by BSIM using this command are:
 
 * results/router_flat.summary : this contains a summary of the inferred
-  components found by <tt>bsim.  </tt>
+  components found by bsim.  
 * results/verilog/router_flat.v and results/verilog/router_flat.library.v: 
   these two files contain an "abstracted" version of the router design.
 
