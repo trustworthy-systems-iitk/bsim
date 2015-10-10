@@ -19,6 +19,7 @@ Make sure your system has the necessary libraries installed. These are:
 * GLPK Solver
 * Boost C++ libraries v1.50 or higher
 
+Note you may have to modify the paths to these libraries in verilog/makefile.
 You can compile without CPLEX if you set USECPLEX=0 in verilog/makefile.  Note
 this makes the overlap resolution step much slower because GLPK is a lot slower
 than CPLEX. Also note the quality of results will be a little worse because the
