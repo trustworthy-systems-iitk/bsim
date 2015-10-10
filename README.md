@@ -3,7 +3,7 @@
 bsim is an algorithmic inference tool that processes gate-level netlists. The
 input to the tool is a flat verilog netlist consisting of gates and latches.
 The output of the tool is an _abstracted_ verilog netlist that contains 
-inferred high-level components such adders, subtractors, register files etc.
+inferred high-level components such adders, subtracters, register files etc.
 
 ##Compiling and Running bsim
 
@@ -22,7 +22,7 @@ Make sure your system has the necessary libraries installed. These are:
 You can compile without CPLEX if you set USECPLEX=0 in verilog/makefile.  Note
 this makes the overlap resolution step much slower because GLPK is a lot slower
 than CPLEX. Also note the quality of results will be a little worse because the
-GPLEX formulation does not implemente what the journal paper calls the
+GPLEX formulation does not implement what the journal paper calls the
 "sliceable" formulation (section IVB).
    
 ###Step 1: Clone the bsim repository.
@@ -67,7 +67,7 @@ output files produced by BSIM using this command are:
 
 bsim has a lot of options, all of which are specified using the config XML file
 that controls its operation. You may want to look through the bsim_options_t
-structure in main.h to see what the options.  One example is the "dumpWords"
+structure in main.h to see what these are.  One example is the "dumpWords"
 option which can be used to dump aggregated words (groups of bits are operated
 open together) that were discovered by bsim.
 
