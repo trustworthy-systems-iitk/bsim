@@ -128,6 +128,7 @@ id_list:
     };
 
 id_list_empty: 
+    %empty
     /* empty list. */
     {
         $$ = new wire_list_t();
@@ -205,7 +206,7 @@ statement:
         $$ = new stm_t($1);
     }
     /* nothing */
-    |
+    | %empty
     {
         $$ = NULL;
     }
