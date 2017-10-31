@@ -4026,7 +4026,7 @@ void flat_module_t::processLibElemMatch(
                 module->get_module_name(),
                 i,
                 (polarity ? "-" : "+"),
-                info->canonicalPtr->covers.size());
+                (long unsigned int) info->canonicalPtr->covers.size());
         for(kcoverset_t::iterator it =  info->canonicalPtr->covers.begin();
                 it != info->canonicalPtr->covers.end();
                 it++)
@@ -5832,6 +5832,11 @@ void flat_module_t::create_matching_modules()
 
 void flat_module_t::merge_modules(void)
 {
+    if (modules.size() == 0) {
+        printf("no modules found!\n");
+        return;
+    }
+
     //printf("# of covered gates before merging:     %5d\n", count_covered_gates());
     //printf("# of conflicting gates before merging: %5d\n", count_conflicting_gates());
 #if defined(MODULE_CONSTRAINTS) || defined(USE_GLPK)
