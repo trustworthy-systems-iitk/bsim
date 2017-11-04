@@ -53,7 +53,7 @@ LIBS=-lfl -lz -lglpk
 
 DEFINES=-D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS -D IL_STD ${CPLEXDEFINE} # -DMODULE_CONSTRAINTS : this last flag is for backward compatibility with the "buggy" ILP formulation.
 
-CXXFLAGS:=-c -Wall -Werror ${INCLUDE} ${DEFINES} ${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} -Wno-unused-result -Wno-unused-function
+CXXFLAGS:=-c -Wall ${INCLUDE} ${DEFINES} ${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} -Wno-unused-result -Wno-unused-function
 LDFLAGS:=${DBGFLAGS} ${OPTFLAGS} ${PGFLAGS} $(CUDDLIBRARIES)  ${CPLEXLIBRARIES}
 SUFFIXES += .d
 
