@@ -4041,7 +4041,10 @@ void flat_module_t::create_not_relation()
 {
     input_provider_t* ipp = get_ipp(1);
     BDD notBDD = !ipp->inp(0);
+    printBDD(stdout, notBDD);
     fnInfo_t* notInfo = getFunction(notBDD);
+    if (notInfo == NULL) return;
+
     for(std::set<kcover_t*>::iterator i = notInfo->covers.begin();
             i != notInfo->covers.end();
             i++) {
