@@ -525,7 +525,7 @@ namespace vcd_n
         std::cout << "filename "<< fname << std::endl;
         mkdir(fname.c_str(), 755);
 
-        std::cout << filename.substr(0,found+1).c_str() << std::cout;
+        std::cout << filename.substr(0,found+1).c_str() << std::endl;
         std::ofstream fl((fname + "/map.out").c_str());
         std::ofstream fl2((fname  + "/bits.out").c_str());
         std::ofstream fl3((fname + "/toggles.out").c_str());
