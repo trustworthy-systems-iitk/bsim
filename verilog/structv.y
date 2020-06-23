@@ -6,7 +6,7 @@
 #include "symbol.h"
 #include "ast.h"
 
-extern int yylex(void);
+extern "C" int yylex(void);
 extern int yylineno;
 
 void yyerror(const char *str)

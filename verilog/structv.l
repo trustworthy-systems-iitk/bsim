@@ -6,6 +6,8 @@
 #include "ast.h"
 #include "structv.tab.hh"
 
+extern "C" int yylex(void);
+
 %}
 
 %s IN_C_COMMENT IN_CPP_COMMENT
