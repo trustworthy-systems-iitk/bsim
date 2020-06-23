@@ -100,7 +100,9 @@ structure in main.h to see what these are.  One example is the "dumpWords"
 option which can be used to dump aggregated words (groups of bits are operated
 open together) that were discovered by bsim.
 
-#References
+
+References
+==========
 
 This software is published in two papers:
 
