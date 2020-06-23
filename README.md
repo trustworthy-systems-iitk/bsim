@@ -1,13 +1,18 @@
-#Introduction
+
+Introduction
+============
 
 bsim is an algorithmic inference tool that processes gate-level netlists. The
 input to the tool is a flat verilog netlist consisting of gates and latches.
 The output of the tool is an _abstracted_ verilog netlist that contains 
 inferred high-level components such adders, subtracters, register files etc.
 
-##Compiling bsim
 
-###Step 0: Requirements.
+Compiling bsim
+==============
+
+Step 0: Requirements
+--------------------
 
 bsim was developed on Linux. Some people have had success installing and running
 it on Macs, but this requires hacking the makefile. These instructions assume
@@ -26,11 +31,14 @@ than CPLEX. Also note the quality of results will be a little worse because the
 GPLEX formulation does not implement what the journal paper calls the
 "sliceable" formulation (section IVB).
    
-###Step 1: Clone the bsim repository.
+Step 1: Clone the bsim repository
+---------------------------------
 
     $ hg clone https://spramod@bitbucket.org/spramod/bsim-tetc14
 
-###Step 2: Build CUDD
+
+Step 2: Build CUDD
+------------------
      
     $  cd bsim/cudd-2.4.2/
     $  make
@@ -38,21 +46,41 @@ GPLEX formulation does not implement what the journal paper calls the
     $  make
     $  cd ../..
      
-###Step 3: Build MiniSAT
+
+Step 3: Build MiniSAT
+---------------------
 
     $  cd minisat/
     $  export MROOT=`pwd`
     $  cd core/
     $  make libr
 
-###Step 4: Build bsim
+
+Step 4: Build bsim
+------------------
 
     $ cd verilog/
     $ make
 
 If all this succeeds, you have successfully built bsim.
 
-##Running bsim
+
+Step n: A shortcut
+------------------
+
+If all the above has worked successfully for you before, you can just run the
+script compile.sh which executes the above commands.
+
+    $ ./compile.sh
+
+Running the script is NOT recommended unless you are comfortable debugging bsim
+because you may run into weird errors at some point in the script and be unable
+to debug them.
+
+
+Running bsim
+============
+
 
 One example run is as follows:
 
