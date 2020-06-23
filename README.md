@@ -34,7 +34,7 @@ GPLEX formulation does not implement what the journal paper calls the
 Step 1: Clone the bsim repository
 ---------------------------------
 
-    $ hg clone https://spramod@bitbucket.org/spramod/bsim-tetc14
+    $ git clone https://github.com/trustworthy-systems-iitk/bsim.git
 
 
 Step 2: Build CUDD
